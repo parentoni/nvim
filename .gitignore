@@ -1,0 +1,2 @@
+# Exclude compiled packer code
+*packer_compiled.lua
