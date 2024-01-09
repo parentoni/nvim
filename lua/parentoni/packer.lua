@@ -23,7 +23,7 @@ return require('packer').startup(function(use)
 	  end
   })
 
-  use({'nvim-treesitter/nvim-treesitter', {run = ':TSpdate'}})
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSpdate'})
   use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
@@ -48,4 +48,6 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 		}
 	  }
+  use ('feline-nvim/feline.nvim')
+
   end)

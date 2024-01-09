@@ -14,6 +14,3 @@ vim.keymap.set("n", "<leader>o", "o<Esc>")
 -- Remap Esc 
 vim.keymap.set("i", "jk", "<Esc>")
 
-
-
-
