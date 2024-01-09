@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
   })
 
   use({'nvim-treesitter/nvim-treesitter', {run = ':TSpdate'}})
+  use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
@@ -37,7 +38,7 @@ return require('packer').startup(function(use)
 
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
-		  -- Autocompletion
+	  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'hrsh7th/cmp-buffer'},
@@ -47,5 +48,4 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 		}
 	  }
-  
   end)
