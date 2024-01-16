@@ -14,3 +14,5 @@ vim.keymap.set("n", "<leader>o", "o<Esc>")
 -- Remap Esc 
 vim.keymap.set("i", "jk", "<Esc>")
 
+-- Rapid window navigation
+vim.keymap.set("n", "<leader>w", "<C-w><C-w>")
