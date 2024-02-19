@@ -18,3 +18,7 @@ vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<leader>w", "<C-w><C-w>")
 -- Rapid window navigation
 vim.keymap.set("n", "<leader>w", "<C-w><C-w>")
+
+-- System clipboard copy
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")

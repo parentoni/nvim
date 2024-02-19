@@ -1,2 +1,4 @@
 # Exclude compiled packer code
 plugin/packer_compiled.lua
+
+*.DS_Store
