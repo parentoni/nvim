@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
       {'saadparwaiz1/cmp_luasnip'},
       {'rafamadriz/friendly-snippets'},
+      {'github/copilot.vim'},
     }
   }
   use ('feline-nvim/feline.nvim')
@@ -58,4 +59,5 @@ return require('packer').startup(function(use)
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   }
+
 end)
