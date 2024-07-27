@@ -2,7 +2,6 @@ local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
-  
   lsp_zero.set_sign_icons({
     error = '✘',
     warn = '▲',
@@ -23,7 +22,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer', "eslint", "tailwindcss", "lua_ls", "cssls"},
+  ensure_installed = {'tsserver',  'rust_analyzer', "eslint", "tailwindcss", "lua_ls", "cssls"},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -32,7 +31,6 @@ require('mason-lspconfig').setup({
     end,
   }
 })
-
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 

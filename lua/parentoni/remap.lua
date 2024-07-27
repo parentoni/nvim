@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Allow for the creation of ts use cases
+vim.keymap.set("n", "<leader>uc", "<Cmd>:lua CreateUseCase()<CR>", { silent = true, noremap = true })
 -- Allow visual selected to move
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

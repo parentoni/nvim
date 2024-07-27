@@ -45,19 +45,10 @@ return require('packer').startup(function(use)
       {'hrsh7th/cmp-path'},
       {'L3MON4D3/LuaSnip'},
       {'saadparwaiz1/cmp_luasnip'},
-      {'rafamadriz/friendly-snippets'},
-      {'github/copilot.vim'},
+      {'rafamadriz/friendly-snippets'}
     }
   }
+
   use ('feline-nvim/feline.nvim')
-  use {
-    "danymat/neogen",
-    config = function()
-      require('neogen').setup {}
-    end,
-    requires = "nvim-treesitter/nvim-treesitter",
-    -- Uncomment next line if you want to follow only stable versions
-    -- tag = "*"
-  }
 
 end)
